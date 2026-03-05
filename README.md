@@ -1,5 +1,6 @@
 # 🚀 Polyglot Backend Dev
 
+
 This repository documents my **backend development learning journey** where I practice and build projects using multiple backend technologies. The goal of this repository is to strengthen my understanding of **server-side development, APIs, and backend frameworks** while exploring different programming languages.
 
 Currently, I am working as a **Backend Developer**, and alongside my professional work I continuously improve my skills by practicing technologies like **Java, Python, Node.js, Django, and Flask**.
