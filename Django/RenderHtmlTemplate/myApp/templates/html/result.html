@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+<h1>🎓 Result Summary</h1>
+
+<p>Name: {{ name }}</p>
+<p>Standard: {{ standard }}</p>
+
+<h3>Marks:</h3>
+<ul>
+    {% for m in marks %}
+        <li>{{ m }}</li>
+    {% endfor %}
+</ul>
+
+<p><b>Total:</b> {{ total }}</p>
+<p><b>Percentage:</b> {{ percentage }}%</p>
+<p><b>Grade:</b> {{ grade }}</p>
+
+{% if status == "Pass" %}
+    <h3 style="color:green;">✅ Pass</h3>
+{% else %}
+    <h3 style="color:red;">❌ Fail</h3>
+{% endif %}
+
+<a href="/">🔙 Back to Home</a>
+
+</body>
+</html>
