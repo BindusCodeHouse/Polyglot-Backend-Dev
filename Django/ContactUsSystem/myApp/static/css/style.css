@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.contact-section{
+    width:100%;
+    max-width:1000px;
+}
+
+.container{
+    display:flex;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+.contact-info{
+    flex:1;
+    background:#0f172a;
+    color:white;
+    padding:50px;
+}
+
+.contact-info h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.info-box{
+    margin-top:30px;
+}
+
+.info-box h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.contact-form{
+    flex:1;
+    padding:25px;
+}
+
+.contact-form h2{
+    margin-bottom:30px;
+    color:#0f172a;
+    font-size:32px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#4facfe;
+    box-shadow:0 0 10px rgba(79,172,254,0.3);
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#4facfe;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0ea5e9;
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .contact-info,
+    .contact-form{
+        padding:30px;
+    }
+
+    .contact-info h1{
+        font-size:30px;
+    }
+}
+
+.toast{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+
+    animation: slideIn 0.5s ease,
+               fadeOut 0.5s ease 3s forwards;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% if success %}
+    <div id="toast" class="toast">
+        ✅ Message sent successfully!
+    </div>
+    {% endif %}
+    <section class="contact-section">
+        <div class="container">
+
+            <div class="contact-info">
+                <h1>Get In Touch</h1>
+                <p>
+                    We'd love to hear from you. Whether you have a question,
+                    feedback, or need assistance, our team is ready to help.
+                </p>
+
+                <div class="info-box">
+                    <h3>📍 Address</h3>
+                    <p>123 Business Street, Ahmedabad, Gujarat</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>📞 Phone</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>✉ Email</h3>
+                    <p>support@example.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+
+                <form method="POST" action="{% url 'contact' %}">
+                    {% csrf_token %}
+
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
