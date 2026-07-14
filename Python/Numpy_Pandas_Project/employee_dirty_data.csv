@@ -1,0 +1,17 @@
+EmployeeID,Name,Age,Department,Salary,Experience,City
+101, Rahul ,25,IT,50000,2,Ahmedabad
+102,Priya,,HR,45000,3,Surat
+103,,28,Finance,60000,4,Rajkot
+104, Amit ,-30,IT,70000,5,Vadodara
+105,Kajal,22,,40000,1,Ahmedabad
+106,Rohit,29,Sales,-55000,4,Surat
+107, Neha ,27,Finance,,3,Rajkot
+108,  Vijay  ,31,it,65000,6,Ahmedabad
+109,Pooja,200,HR,48000,2,Surat
+110,Rahul,25,IT,50000,2,Ahmedabad
+111,Kriti,26,Finance,NaN,3,Rajkot
+112, Ankit ,,Sales,58000,,Vadodara
+111,Kriti,26,Finance,NaN,3,Rajkot
+113,,35,HR,75000,8,
+114,Meena,24,finance,52000,-2,Ahmedabad
+115,Suresh,0,IT,62000,5,Surat
