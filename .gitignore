@@ -1,3 +1,10 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+node_modules/
+
 # Virtual Environment
 venv/
 .venv/
